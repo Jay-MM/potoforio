@@ -7,39 +7,198 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="dev/style.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
 </head>
 <body>
-  <header>
-    <nav>
-      <!-- logo -->
-      <!-- social links -->
-      <!-- llinks to page sections -->
-    </nav>
+  <header> 
     <div class="hero">
-      <img src="#" alt="hero image">
-      <!-- pfp -->
-      <!-- quote -->
+      <div class="video-container">
+        <video autoplay loop muted class="video" playsinline>
+          <source src="assets/hero.mp4" type="video/mp4" alt="hero video">
+        </video>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-custom" id="myNavbar">
+        <div class="container-fluid">
+          <div id = "navbarLinks">
+            <a class="navbar-brand d-flex r align-items-center me-4" href="#">
+              <img src = "assets/logo.svg" width="62">
+              <h3>J. Marquez</h3>
+            </a>
+          </div>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- llinks to page sections -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item pe-5">
+                <!-- about me -->
+                <a class="nav-link" aria-current="page" href="#about">About Me</a>
+              </li>
+              <li class="nav-item pe-5">
+                <!-- projects -->
+                <!-- testimonials --> 
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item pe-5">
+                <!-- contact me -->
+                <!-- get a free quote -->
+                <a class="nav-link" href="#contact">Contact me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h1 class="overlay">
+        Hello World
+      </h1>
     </div>
+    <!-- buy me coffee? -->
+    
+    <!-- social links -->
+    <!-- phone number -->
+    <!-- email -->
+    <!-- social links -->
+    <div class="sticky-container">
+      <ul class="sticky">
+        <li>
+          <i class="bi bi-twitter-x text-black"></i>
+          <p><a href="https://twitter.com/codexworldblog" target="_blank"> Follow me on<br>X</a></p>
+        </li>
+        <li>
+          <svg fill="none" viewBox="0 0 64 57" width="30" style="width: 22px; height: 26.7188px;"><path fill="#000000" d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"></path></svg>
+              <p><a href="https://plus.google.com/codexworld" target="_blank"> Follow me on <br>Bluesky</a></p>
+            </li>
+          <li>
+              <i class="bi bi-linkedin text-black"></i>
+              <p><a href="https://www.linkedin.com/company/codexworld" target="_blank"> Follow me on <br>LinkedIn</a></p>
+          </li>
+          <li>
+              <i class="bi bi-github text-black"></i>
+              <p><a href="http://www.youtube.com/codexworld" target="_blank">  follow me on <br>Github</a></p>
+          </li>
+      </ul>
+  </div>
   </header>
 
   <main>
     <!-- about me -->
+    <section id = "about">
+      <h2> About me</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores voluptates quam illo doloremque ducimus aliquam sed, veniam minima at cupiditate impedit illum. Dignissimos, repudiandae? Illo qui molestias alias quaerat inventore? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, ratione maiores voluptas eos placeat suscipit atque, voluptates quae molestias tempora sequi nulla at voluptatem delectus quasi fugiat, ducimus libero quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fugiat a sequi incidunt quasi eos modi reiciendis nam quibusdam voluptate. Numquam, perferendis sit recusandae dolorum quia tempora placeat quasi odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      </p>
+    </section>
+    <!-- projects -->
+    <section id="projects">
+      <h2> My Work</h2>
+      <a>
+        view my resume 
+      </a>
+      <div id ="myProjects" >
+        <li">
+          <a>
+            <img src ="#" alt ="">
+            <p>Project 1</p>
+          </a>
+        </li>
+        <li>
+          <a>
+            <img src ="#" alt ="">
+            <p>Project 2</p>
+          </a>
+        </li>
+        <li>
+          <a>
+            <img src ="#" alt ="">
+            <p>Project 3</p>
+          </a>
+        </li>
+        <li>
+          <a>
+            <img src ="#" alt ="">
+            <p>Project 4</p>
+          </a>
+        </li>
+        <li>
+          <a>
+            <img src ="#" alt ="">
+            <p>Project 5</p>
+          </a>
+        </li>
+        <li>
+          <a>
+            <img src ="#" alt ="">
+            <p>Project 6</p>
+          </a>
+        </li>
+      </div>
+    </section>
 
-<!-- projects -->
+    <section id = "contact">
+      <h2> I'd love to hear from you:</h2>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        <div id="emailHelp" class="form-text">I'll never share your personal information with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="number" class="form-label">Phone number</label>
+        <input type="number" class="form-control" id="number" placeholder="(123)456-7890">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Send me a message and I'll get back to you ASAP </label>
+        <textarea class="form-control" id="message" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </section>
+
 
 <!-- testimonials --> 
-
+<!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores voluptates quam illo doloremque ducimus aliquam sed, veniam minima at cupiditate impedit illum. Dignissimos, repudiandae? Illo qui molestias alias quaerat inventore? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, ratione maiores voluptas eos placeat suscipit atque, voluptates quae molestias tempora sequi nulla at voluptatem delectus quasi fugiat, ducimus libero quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fugiat a sequi incidunt quasi eos modi reiciendis nam quibusdam voluptate. Numquam, perferendis sit recusandae dolorum quia tempora placeat quasi odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, architecto ut? Ratione fugit accusamus veritatis nihil deleniti iste minus cum. Dolorem velit reprehenderit ex nostrum et corrupti aut eaque laborum.
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores voluptates quam illo doloremque ducimus aliquam sed, veniam minima at cupiditate impedit illum. Dignissimos, repudiandae? Illo qui molestias alias quaerat inventore? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, ratione maiores voluptas eos placeat suscipit atque, voluptates quae molestias tempora sequi nulla at voluptatem delectus quasi fugiat, ducimus libero quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fugiat a sequi incidunt quasi eos modi reiciendis nam quibusdam voluptate. Numquam, perferendis sit recusandae dolorum quia tempora placeat quasi odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, architecto ut? Ratione fugit accusamus veritatis nihil deleniti iste minus cum. Dolorem velit reprehenderit ex nostrum et corrupti aut eaque laborum. -->
 <!-- get a free quote -->
 <!-- contact me -->
 
-<!-- buy me coffee -->
-  </main>
+<!-- buy me coffee? -->
+</main>
 
-  <footer>
-    <!-- social links -->
+<footer>
     <!-- phone number -->
     <!-- email -->
+  <div>
+    <a href="mailto:marquez.jay444@gmail.com" target="_blank">marquez.jay444@gmail.com</a>
+  </div>
+    <a href="tel: +12625059148">(262)5059148</a>
+    <!-- social links -->
+  <div class=>
+    <ul>
+      <li>
+        <a href="">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="bi bi-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+    
+    <!-- <ul>
+      <li class="nav-item" id = "navbarLogo">
+        <a class="nav-link disabled" aria-disabled="true">
+          <img src= "assets/logo2.svg" width="145">
+        </a>
+      </li>
+    </ul> -->
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
