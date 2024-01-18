@@ -190,6 +190,141 @@ li svg {
   height: auto;
 }
 
+.form-container {
+  max-width: 69rem;
+  background: linear-gradient(#212121, #353434d8) padding-box,
+              linear-gradient(145deg, transparent 35%, #05fa42ab, #00f7ff71) border-box;
+  border: 0.42rem solid transparent;
+  padding: 2rem 1.5rem;
+  font-size: 0.875rem;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.form-container button:active {
+  transform: scale(0.95);
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 0.3125rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 0.0625rem solid #414141;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  resize: none;
+  color: #fff;
+  height: 6rem;
+  border: 0.0625rem solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group ::placeholder {
+  opacity: .35;
+  color: #cbddd0;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #1fff01;
+  color: black;
+  background-color: white;
+
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #1fff01;
+  color: black;
+  background-color: white;
+}
+
+
+
+
+.form-container .form-submit-btn {
+  box-sizing: border-box;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 600;
+  width: 6.3rem;
+  color: #c6c7c4;
+  background: #3131319a;
+  border: 0.063rem solid #414141;
+  padding: 0.75rem 1rem;
+  font-size: inherit;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: 300ms;
+  overflow: hidden;
+}
+
+
+
+.form-container .form-submit-btn:hover, .form-container .form-submit-btn:focus {
+  color: #000000;
+  background: rgba(240, 237, 237, 0.836);
+  border-color: #00ffff;
+  box-shadow: 0 0 1rem #1fff01;
+}
+
+
+
 @media (max-width: 993px) {
   .blurry-card {
     overflow-y: auto;
