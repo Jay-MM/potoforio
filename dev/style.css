@@ -1,3 +1,4 @@
+
 *,
 *::before,
 *::after {
@@ -29,7 +30,7 @@ body {
 
 .video {
   width: 100%;
-  height: 56rem;
+  height: 69rem;
   object-fit: cover;
 }
 
@@ -73,6 +74,7 @@ h3 {
 
 
 .floating-coin {
+  padding-top: 6rem;
   margin: 2rem auto; 
   width: 100%;
   max-width: 300px;
@@ -85,15 +87,15 @@ h3 {
 }
 
 .blurry-card {
-  margin-top: 2rem; 
   width: 80%; 
   max-width: 600px; 
-  margin: auto; 
+  margin-top: 8rem;
+  margin-bottom: 2rem;
   background: transparent;
   border-radius: 10px;
   border: white 0.05rem solid;
-  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
-  padding: 3rem;
+  box-shadow:0 0 100px  rgba(0, 0, 0, .75);
+  padding: 1.2rem;
   text-align: center;
   backdrop-filter: blur(10px);
 }
@@ -102,12 +104,13 @@ h3 {
   color: rgb(255, 255, 255);
   font-size: 2em;
   border-bottom: white 0.05rem solid;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 .card-content {
   color: rgb(255, 255, 255);
-  padding-top: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 .floating-coin,
@@ -171,6 +174,20 @@ li svg {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+#myProjects li {
+  width: calc(50% - 30px); /* Adjust spacing as needed */
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+#myProjects .full-width {
+  width: 100%;
+}
+
+#myProjects img {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 993px) {

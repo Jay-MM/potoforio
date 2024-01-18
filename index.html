@@ -6,8 +6,9 @@
   <title>Peritia Meus</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="dev/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="dev/normalize.css"">
+  <link rel="stylesheet" href="dev/style.css">
   
 </head>
 <body>
@@ -75,19 +76,19 @@
       <ul class="sticky">
         <li>
           <i class="bi bi-twitter-x text-black"></i>
-          <p><a href="https://twitter.com/codexworldblog" target="_blank"> Follow me on<br>X</a></p>
+          <p><a href="https://twitter.com/_gemini36" target="_blank"> Follow me on<br>X</a></p>
         </li>
         <li>
           <svg fill="none" viewBox="0 0 64 57" width="30" style="width: 22px; height: 26.7188px;"><path fill="#000000" d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"></path></svg>
-              <p><a href="https://plus.google.com/codexworld" target="_blank"> Follow me on <br>Bluesky</a></p>
+              <p><a href="https://bsky.app/profile/gemiini.bsky.social" target="_blank"> Follow me on <br>Bluesky</a></p>
             </li>
           <li>
               <i class="bi bi-linkedin text-black"></i>
-              <p><a href="https://www.linkedin.com/company/codexworld" target="_blank"> Follow me on <br>LinkedIn</a></p>
+              <p><a href="https://www.linkedin.com/in/marquez-jesus/" target="_blank"> Follow me on <br>LinkedIn</a></p>
           </li>
           <li>
               <i class="bi bi-github text-black"></i>
-              <p><a href="http://www.youtube.com/codexworld" target="_blank">  follow me on <br>Github</a></p>
+              <p><a href="https://github.com/Jay-MM" target="_blank">  follow me on <br>Github</a></p>
           </li>
       </ul>
     </div>
@@ -100,34 +101,34 @@
       <a>
         view my resume 
       </a>
-      <div id ="myProjects" >
-        <li">
+      <div id="myProjects" class="project-grid">
+        <li class="full-width">
           <a href="https://jay-mm.github.io/vilicus-operis/" target="_blank">
             Project Tracker
-            <embed src="https://jay-mm.github.io/vilicus-operis/" >
+            <embed src="https://jay-mm.github.io/vilicus-operis/" width = "100%" height="222">
           </a>
         </li>
-        <li>
-          <a>
-            <img src ="assets/gp-desktop.png" alt ="">
-            <img src ="assets/gp-mobile.png" alt ="">
+        <li class="half-width">
+          <a id="project2">
+            <img src="assets/gp-desktop.png" alt="">
             <p>Project 2</p>
           </a>
         </li>
-        <li>
+        <li class="half-width">
           <a>
-            <img src ="./assets/readme-gen.png" alt ="">
+            <img src="./assets/we-do.png" alt="">
             <p>Project 3</p>
           </a>
         </li>
-        <li>
+        <li class="full-width">
           <a>
-            <img src ="./assets/we-do.png" alt ="">
+            <img src="./assets/readme-gen.png" alt="">
             <p>Project 4</p>
           </a>
         </li>
       </div>
     </section>
+    
 
     <section id = "contact">
       <h2> I'd love to hear from you:</h2>
@@ -160,26 +161,6 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores voluptates qua
 <footer class="px-5 ">
     <!-- phone number -->
     <!-- email -->
-    <!-- social links -->
-  <div>
-    <ul>
-      <li>
-        <a href="">
-          <i class="bi bi-twitter-x"></i>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <i class="bi bi-linkedin"></i>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <i class="bi bi-github"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
   <div>
     <a href="mailto:marquez.jay444@gmail.com" target="_blank">marquez.jay444@gmail.com</a>
   </div>
