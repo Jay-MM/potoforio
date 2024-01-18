@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0; 
+  padding: 0;
+  font-family: Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 1.15rem;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.video {
+  width: 100%;
+  height: 56rem;
+  object-fit: cover;
+}
+
+.navbar-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1003;
+}
+
+#myNavbar {
+  background-color: rgba(0, 0, 0, 0.876);
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#navbarLogo {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  right: 0 auto;
+}
+
+#navbarLinks {
+  margin-right: 20%;
+}
+
+h3 {
+  color: white;
+}
+
+.about-section {
+  display: flex;
+  align-items: center; 
+}
+
+
+.floating-coin {
+  margin: 2rem auto; 
+  width: 100%;
+  max-width: 300px;
+}
+
+.floating-coin img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.blurry-card {
+  margin-top: 2rem; 
+  width: 80%; 
+  max-width: 600px; 
+  margin: auto; 
+  background: transparent;
+  border-radius: 10px;
+  border: white 0.05rem solid;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.blurry-card h1.overlay {
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  border-bottom: white 0.05rem solid;
+  padding-bottom: 3rem;
+}
+
+.card-content {
+  color: rgb(255, 255, 255);
+  padding-top: 3rem;
+}
+
+.floating-coin,
+.blurry-card {
+  z-index: 1002;
+}
+
+.sticky-container {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  right: -130px;
+  top: 230px;
+  width: 210px;
+  z-index: 1700;
+}
+
+.sticky li {
+  list-style-type: none;
+  background-color: #fff;
+  color: #efefef;
+  height: 43px;
+  padding: 0;
+  margin: 0 0 1px 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.sticky li:hover {
+  margin-left: -115px;
+}
+
+.sticky li i,
+li svg {
+  float: left;
+  margin: 5px 18px;
+  margin-right: 12px;
+}
+
+.sticky li p {
+  padding-top: 5px;
+  margin: 0px;
+  line-height: 16px;
+  font-size: 11px;
+}
+
+.sticky li p a {
+  text-decoration: none;
+  color: #2c3539;
+}
+
+.sticky li p a:hover {
+  text-decoration: underline;
+}
+
+#myProjects {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media (max-width: 993px) {
+  .blurry-card {
+    overflow-y: auto;
+    max-height: calc(100vh - 22rem);
+  }
+  .about-section {
+    flex-direction: column;
+  }
+}
