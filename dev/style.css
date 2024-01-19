@@ -12,6 +12,7 @@ body {
   padding: 0;
   font-family: Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: 1.15rem;
+  background-color: #000000d5;
 }
 
 .hero {
@@ -52,18 +53,11 @@ body {
   justify-content: center;
 }
 
-#navbarLogo {
-  padding: 0px;
-  margin: 0px;
-  position: relative;
-  right: 0 auto;
-}
-
 #navbarLinks {
   margin-right: 20%;
 }
 
-h3 {
+h2, h3 {
   color: white;
 }
 
@@ -94,7 +88,7 @@ h3 {
   background: transparent;
   border-radius: 10px;
   border: white 0.05rem solid;
-  box-shadow:0 0 100px  rgba(0, 0, 0, .75);
+  box-shadow:0 0 30px  rgba(0, 0, 0, .75);
   padding: 1.2rem;
   text-align: center;
   backdrop-filter: blur(10px);
@@ -125,13 +119,12 @@ h3 {
   right: -130px;
   top: 230px;
   width: 210px;
-  z-index: 1700;
+  z-index: 1007;
 }
 
 .sticky li {
   list-style-type: none;
-  background-color: #fff;
-  color: #efefef;
+  background-color: #eef1ed;
   height: 43px;
   padding: 0;
   margin: 0 0 1px 0;
@@ -167,18 +160,22 @@ li svg {
 
 .sticky li p a:hover {
   text-decoration: underline;
+  color: #3bb92ada;
 }
 
-#myProjects {
+#myProjects ul{
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap:2rem;
 }
 
 #myProjects li {
-  width: calc(50% - 30px); /* Adjust spacing as needed */
-  margin-bottom: 20px; /* Adjust spacing as needed */
+  width: calc(50% - 1.2rem); 
+  margin-bottom: 3rem; 
 }
 
 #myProjects .full-width {
@@ -323,7 +320,29 @@ li svg {
   box-shadow: 0 0 1rem #1fff01;
 }
 
+a {
+  color: #c6cac6;
+}
 
+a:hover, a:focus {
+  color: #05ff05cb;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  border-top: .1rem solid #1fff0175 ;
+}
+
+footer a {
+  padding: 1rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
 
 @media (max-width: 993px) {
   .blurry-card {
@@ -332,5 +351,8 @@ li svg {
   }
   .about-section {
     flex-direction: column;
+  }
+  #myProjects li.half-width {
+    width: 100vw;
   }
 }
