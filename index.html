@@ -1,52 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Meta tags for character set and viewport -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Page title -->
-  <title>Peritia Meus</title>
-
-  <!-- Minimal Bootstrap styles -->
+  <title>My Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <!-- Normalize.css for consistent default styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <!-- Your custom styles -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-  <!-- Header section -->
   <header>
     <div class="hero">
-      <!-- Video container with video background -->
       <div class="video-container">
         <video autoplay loop muted class="video" playsinline>
           <source src="assets/hero.mp4" type="video/mp4">
         </video>
       </div>
-      <!-- Navigation bar -->
       <nav class="navbar navbar-expand-lg navbar-custom" id="myNavbar">
         <div class="container-fluid">
           <div id="navbarLinks">
-            <!-- Brand/logo with image and text -->
             <a class="navbar-brand d-flex r align-items-center me-4" href="#">
               <h3 id="miNombre">J. Marquez</h3>
             </a>
           </div>
-          <!-- Navbar toggle button -->
           <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- Navbar links -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <!-- Navigation links -->
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#about">About&nbsp;Me</a>
               </li>
@@ -63,7 +49,6 @@
           </div>
         </div>
       </nav>
-      <!-- About section with image and content -->
       <section id="about" class=" container about-section">
         <div class="floating-coin">
           <img id="pfp" />
@@ -78,7 +63,6 @@
             <br>
             <br>
             &nbsp;&nbsp;&nbsp;&nbsp;In my spare time, I like to  paint and draw or learn new things. I also enjoy spending time in nature, whether it's hiking or just relaxing outdoors.
-             
             </p>
           </div>
         </div>
@@ -87,7 +71,6 @@
     <!-- Social links container -->
     <div class="sticky-container">
       <ul class="sticky">
-        <!-- Social links with icons and text -->
         <li>
           <i class="bi bi-twitter-x text-black"></i>
           <p><a href="https://twitter.com/_gemini36" target="_blank"> Follow me on<br>X</a></p>
@@ -109,127 +92,107 @@
       </ul>
     </div>
   </header>
-
-    <!-- Main content section -->
-    <main class="px-3 mx-3">
-      <!-- Projects section -->
-      <section id="projects">
-        <h2>My Work</h2>
-        <!-- Project grid with links and images -->
-        <div id="myProjects" class="project-grid mt-5">
-          <ul>
-            <li class="full-width">
-              <!-- Video embed for Project 1 -->
-              <div class="badge">Interactive</div>
-              <embed class="interactive" src="https://jay-mm.github.io/vilicus-operis/" width="100%" height="222">
-              <a href="https://jay-mm.github.io/vilicus-operis/" target="_blank">
-                <p>Project Tracker - Live Site</p>
-              </a>
-              <a href="https://github.com/Jay-MM/vilicus-operis" target="_blank">Github </a>
-            </li>
-            <li class="half-width">
-              <a href="https://gp-elmagico.netlify.app/" target="_blank">
-                <img src="assets/gp-desktop.png" alt=""></a>
-              <a href="https://gp-elmagico.netlify.app/" target="_blank">
-                <p>Hip-Hop artist "El Magico" - Live Site</p>
-              </a>
-              <a href="https://github.com/gp-elmagico5/el-magico" target="_blank">Github</a>
-            </li>
-            <li class="half-width">
-              <a href="https://we-do-application.herokuapp.com/login" target="_blank">
-                <img src="./assets/we-do.png" alt="">
-                <p>We Do: Activity and Event Hosting App - Live Site</p>
-              </a>
-              <a href="https://github.com/ddwk21/we-do" target="_blank">Github</a>
-            </li>
-            <li class="full-width">
-              <a href="https://github.com/Jay-MM/pro-l-ame" target="_blank">
-                <img src="./assets/readme-gen.png" alt="">
-               Node.js README.md generator tool - Github
-              </a>
-            </li>
-          </ul>
-        </div>
-        <a id="collectionLink" href="./pages/collection.html">View a collection of my projects</a>
-      </section>
-      
-  
-      <!-- Contact section -->
-      <section id="contact">
-
-        <div class="toast-container position-fixed bottom-0 end-0 p-3">
-          <div id="successToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-              <p class="toasty-kitty">😸</p>
-              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body m-2">
-              Your message has been sent!
-            </div>
+  <main class="px-3 mx-3">
+    <!-- Projects section -->
+    <section id="projects">
+      <h2>My Work</h2>
+      <div id="myProjects" class="project-grid mt-5">
+        <ul>
+          <li class="full-width">
+            <div class="badge">Interactive</div>
+            <embed class="interactive" src="https://jay-mm.github.io/vilicus-operis/" width="100%" height="222">
+            <a href="https://jay-mm.github.io/vilicus-operis/" target="_blank">
+              <p>Project Tracker - Live Site</p>
+            </a>
+            <a href="https://github.com/Jay-MM/vilicus-operis" target="_blank">Github </a>
+          </li>
+          <li class="half-width">
+            <a href="https://gp-elmagico.netlify.app/" target="_blank">
+              <img src="assets/gp-desktop.png" alt=""></a>
+            <a href="https://gp-elmagico.netlify.app/" target="_blank">
+              <p>Hip-Hop artist "El Magico" - Live Site</p>
+            </a>
+            <a href="https://github.com/gp-elmagico5/el-magico" target="_blank">Github</a>
+          </li>
+          <li class="half-width">
+            <a href="https://we-do-application.herokuapp.com/login" target="_blank">
+              <img src="./assets/we-do.png" alt="">
+              <p>We Do: Activity and Event Hosting App - Live Site</p>
+            </a>
+            <a href="https://github.com/ddwk21/we-do" target="_blank">Github</a>
+          </li>
+          <li class="full-width">
+            <a href="https://github.com/Jay-MM/pro-l-ame" target="_blank">
+              <img src="./assets/readme-gen.png" alt="">
+              Node.js README.md generator tool - Github
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a id="collectionLink" href="./pages/collection.html">View a collection of my projects</a>
+    </section>
+    <!-- Contact section -->
+    <section id="contact">
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="successToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <p class="toasty-kitty">😸</p>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body m-2">
+            Your message has been sent!
           </div>
         </div>
-  
-        <!-- Error Toast -->
-        <div class="toast-container position-fixed bottom-0 end-0 p-3">
-          <div id="errorToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-              <p class="toasty-kitty">😿&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ERROR!!</p>
-              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body m-2">
-              Looks like Something went wrong. <br>Please try again later.
-            </div>
+      </div>
+      <!-- Error Toast -->
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="errorToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <p class="toasty-kitty">😿&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ERROR!!</p>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body m-2">
+            Looks like Something went wrong. <br>Please try again later.
           </div>
         </div>
-
-        <div>
-          <h2> I'd love to hear from you</h2>
-          <img id="kitty" src="./assets/stickman-right.svg">
-        </div>
-        <!-- Form container with form elements -->
-        <div class="form-container">
-          <form class="form" id="contact-form">
-            <!-- Email input -->
-            <div class="form-group">
-              <label for="email" class="form-label">e-mail</label>
-              <input required="" name="email" id="email" type="email" placeholder="name@example.com">
-              <div id="emailHelp" class="form-text">I'll never share your personal information with anyone else.
-              </div>
+      </div>
+      <div>
+        <h2> I'd love to hear from you</h2>
+        <img id="kitty" src="./assets/stickman-right.svg">
+      </div>
+      <!-- Form container with form elements -->
+      <div class="form-container">
+        <form class="form" id="contact-form">
+          <div class="form-group">
+            <label for="email" class="form-label">e-mail</label>
+            <input required="" name="email" id="email" type="email" placeholder="name@example.com">
+            <div id="emailHelp" class="form-text">I'll never share your personal information with anyone else.
             </div>
-            <!-- Phone number input -->
-            <div class="form-group mb-3">
-              <label for="number" class="form-label">Phone number</label>
-              <input type="text" name="number" id="number" placeholder="(123) 456-7890">
-            </div>
-            <!-- Message textarea -->
-            <div class="form-group mb-3">
-              <label for="message" class="form-label">Message :</label>
-              <textarea required="" type="text" cols="50" rows="10" id="message" name="message"
-                placeholder="How may I help you?"></textarea>
-            </div>
-            <!-- Submit button -->
-            <button type="submit" class="form-submit-btn">Submit</button>
-          </form>
-        </div>
-      </section>
-    </main>
-  
+          </div>
+          <div class="form-group mb-3">
+            <label for="number" class="form-label">Phone number</label>
+            <input type="text" name="number" id="number" placeholder="(123) 456-7890">
+          </div>
+          <div class="form-group mb-3">
+            <label for="message" class="form-label">Message :</label>
+            <textarea required="" type="text" cols="50" rows="10" id="message" name="message"
+              placeholder="How may I help you?"></textarea>
+          </div>
+          <button type="submit" class="form-submit-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
     <!-- Footer section -->
-    <footer class="px-5 ">l;
-
-      
-      <!-- Email and phone number -->
-      <a href="mailto:marquez.jay444@gmail.com" target="_blank">marquez.jay444@gmail.com&nbsp;&nbsp; <i class="bi bi-envelope-at-fill"></i></a>
-      <a href="tel:+12625059148">(262)505-9148&nbsp;&nbsp;<i class="bi bi-telephone-outbound-fill"></i></a>
-    </footer>
-  
-    <!-- Bootstrap JS and your custom script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="scripts/index.js"></script>
-    <script src="scripts/helpers/badge.js"></script>
-  </body>
-  
-  </html>
+  <footer class="px-5 ">l;
+    <a href="mailto:marquez.jay444@gmail.com" target="_blank">marquez.jay444@gmail.com&nbsp;&nbsp; <i class="bi bi-envelope-at-fill"></i></a>
+    <a href="tel:+12625059148">(262)505-9148&nbsp;&nbsp;<i class="bi bi-telephone-outbound-fill"></i></a>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="scripts/index.js"></script>
+  <script src="scripts/helpers/badge.js"></script>
+</body>
+</html>
   

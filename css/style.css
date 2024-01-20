@@ -1,4 +1,4 @@
-
+/* ensures that the box sizing model is consistent for all elements and "before" and "after"  pseudo-elements */
 *,
 *::before,
 *::after {
@@ -10,7 +10,7 @@ body {
   min-height: 100%;
   margin: 0; 
   padding: 0;
-  font-family: Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: 'Roboto Serif', serif, Arial, sans-serif;
   font-size: 1.15rem;
   background-color: #0a0b0afd;
 }
