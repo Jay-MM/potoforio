@@ -283,12 +283,10 @@ li svg {
   width: 100%;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
-  resize: none;
   color: #fff;
-  height: 6rem;
-  border: 0.0625rem solid #414141;
-  background-color: transparent;
   font-family: inherit;
+  background-color: transparent;
+  border: 0.0625rem solid #414141;
 }
 
 .form-container .form-group ::placeholder {
