@@ -8,9 +8,9 @@
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- Normalize.css for consistent default styles -->
-  <link rel="stylesheet" href="../dev/normalize.css">
+  <link rel="stylesheet" href="../css/normalize.css">
   <!-- Your custom styles -->
-  <link rel="stylesheet" href="../dev/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <header>
@@ -56,7 +56,8 @@
     <div id="myProjects" class="container project-grid pt-5 mt-5">
       <ul>
         <li class="half-width">
-          <embed src="https://jay-mm.github.io/rock-paper-sccisors/" width="90%" height="720"  >
+          <div class="badge">Interactive</div>
+          <embed  class="interactive" src="https://jay-mm.github.io/rock-paper-sccisors/" width="90%" height="720"  >
           <a href="https://github.com/Jay-MM/pro-l-ame" target="_blank">
            <p>Rock, Paper, Scissors Game</p>
           </a>
@@ -71,8 +72,8 @@
         </li>
         </li>
         <li class="full-width">
-          <!-- Video embed for Project 1 -->
-          <embed src="https://jay-mm.github.io/vilicus-operis/" width="100%" height="722">
+          <div class="badge">Interactive</div>
+          <embed  class="interactive" src="https://jay-mm.github.io/vilicus-operis/" width="100%" height="722">
           <a href="https://jay-mm.github.io/vilicus-operis/" target="_blank">
             <p>Project Tracker</p>
           </a>
@@ -110,5 +111,8 @@
  <a href="tel:+12625059148">(262)505-9148&nbsp;&nbsp;<i class="bi bi-telephone-outbound-fill"></i></a>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../scripts/index.js"></script>
+    <script src="../scripts/helpers/badge.js"></script>"
 </body>
 </html>

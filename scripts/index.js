@@ -4,6 +4,7 @@ const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 const navbarToggler = document.querySelector('.navbar-toggler');
 const contactForm = document.querySelector('#contact-form' )
 
+
 fetch ( 'https://api.github.com/users/Jay-MM')
 .then(function (response) {
   return response.json()
