@@ -406,6 +406,41 @@ li svg {
   box-shadow: 0 0 1rem #1ff0038f;
 }
 
+
+.toast {
+  background: transparent;
+  border: white 0.1rem solid;
+  box-shadow:0 0 .3rem  rgba(255, 255, 255, 0.404);
+  padding: .5rem;
+  text-align: center;
+  backdrop-filter: blur(1rem);
+}
+
+.toasty-kitty {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.toast-header .btn-close {
+  margin-left: auto;
+  background-color: white;
+}
+
+.toast-body {
+  color: white;
+  font-size: 1.25rem;
+}
+
+#successToast .toast-header {
+  background-color:#03ce252a
+}
+
+#errorToast .toast-header {
+  background-color: rgba(255, 0, 0, 0.212) ;
+  color:white;
+}
+
 a {
   color: #c6cac6;
 }

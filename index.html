@@ -156,6 +156,32 @@
   
       <!-- Contact section -->
       <section id="contact">
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div id="successToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <p class="toasty-kitty">😸</p>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body m-2">
+              Your message has been sent!
+            </div>
+          </div>
+        </div>
+  
+        <!-- Error Toast -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div id="errorToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <p class="toasty-kitty">😿&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ERROR!!</p>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body m-2">
+              Looks like Something went wrong. <br>Please try again later.
+            </div>
+          </div>
+        </div>
+
         <div>
           <h2> I'd love to hear from you</h2>
           <img id="kitty" src="./assets/stickman-right.svg">
