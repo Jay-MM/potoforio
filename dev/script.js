@@ -9,7 +9,7 @@ fetch ( 'https://api.github.com/users/Jay-MM')
   return response.json()
 }) 
 .then(function(data){
-  console.log(data)
+  // console.log(data)
   pfp.src = data.avatar_url
 })
 
