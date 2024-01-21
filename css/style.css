@@ -256,12 +256,12 @@ li svg {
   transition: 300ms;
 }
 
-#collectionLink:hover  {
+/* #collectionLink:hover {
   color: #000000;
   background: rgba(240, 237, 237, 0.836);
   border-color: #00ffff65;
   box-shadow: 0 0 1rem #1ff0038f;
-}
+} */
 
 #contact {
   margin-top: 6rem;

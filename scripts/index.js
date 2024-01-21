@@ -5,6 +5,20 @@ const navbarToggler = document.querySelector('.navbar-toggler');
 const contactForm = document.querySelector('#contact-form' )
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  var video = document.querySelector('.video');
+
+  function playVideo() {
+    video.play().catch(function (error) {
+      // Autoplay was prevented
+      alert('Autoplay was prevented:', error);
+    });
+  }
+
+  // For touch devices
+  document.addEventListener('touchstart', playVideo);
+});
+
 fetch ( 'https://api.github.com/users/Jay-MM')
 .then(function (response) {
   return response.json()
