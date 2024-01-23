@@ -5,7 +5,7 @@
 
 An online portfolio is a great place to maintain one's projects, interests, and ways to be contacted. Having everything in one place makes it easier to show one's work to anybody that is interested without having to  use multiple mediums.
 
-## Table of Contents (Optional)
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
